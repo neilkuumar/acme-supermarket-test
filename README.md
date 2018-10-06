@@ -2,7 +2,7 @@
     yarn install
 
 # Run
-## (./src/index.js)
+`(./src/index.js)`
     yarn start
 
 # Test
