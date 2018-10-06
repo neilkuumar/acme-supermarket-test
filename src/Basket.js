@@ -18,12 +18,8 @@ export default class Basket {
 	 */
 	add(product, qty = 1) {
 		const id = product.id;
-		if (!this.products[id]) {
-			this.products[id] = { ...product, qty };
-		} else {
-			const existingQty = this.products[id].qty;
-			this.products[id].qty = existingQty + qty;
-		}
+		const newQty = (this.products[id] ? this.products[id].qty : 0) + qty;
+		this.products[id] = { ...product, qty: newQty };
 	}
 
 	/**

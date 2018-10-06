@@ -14,6 +14,7 @@ describe('Basket', () => {
 			const basket = new Basket();
 			expect(basket).toEqual({ currency: '£', pricingRules: [], products: {} });
 		});
+
 		it('creates a new basket with pricing rules', () => {
 			const basket = new Basket(pricingRules);
 			expect(basket.pricingRules).toEqual([
