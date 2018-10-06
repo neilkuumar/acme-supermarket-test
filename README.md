@@ -36,3 +36,18 @@ Test Data:
 
     Basket: SR1, SR1, FR1, SR1
     Total price expected: £16.61
+# Build
+    yarn install
+
+# Run
+## (./src/index.js)
+    yarn start
+
+# Test
+    yarn test
+
+## Product List
+### `./data/products.json`
+
+## Pricing Rules
+### `./data/pricingRules.json`

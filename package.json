@@ -1,23 +1,35 @@
 {
-  "name": "acme-supermarket",
+  "name": "arcadia-test",
   "version": "1.0.0",
-  "description": "ACME JavaScript Test",
+  "description": "ACME Supermarket test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel-node": "babel-node --presets=latest",
+    "test": "jest --coverage",
+    "start": "nodemon --exec npm run babel-node -- src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ag-digital/acme-supermarket-test.git"
+  "babel": {
+    "presets": [
+      "stage-2",
+      "latest"
+    ]
   },
-  "keywords": [
-    "javascript",
-    "test"
-  ],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ag-digital/acme-supermarket-test/issues"
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.6.1",
+    "eslint-config-google": "^0.10.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3"
   },
-  "homepage": "https://github.com/ag-digital/acme-supermarket-test#readme"
+  "dependencies": {
+    "babel-jest": "^23.6.0"
+  }
 }

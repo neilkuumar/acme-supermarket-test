@@ -1,0 +1,17 @@
+{
+    "FR1": {
+        "id": "FR1",
+        "desc": "Fruit tea",
+        "price": 3.11
+    },
+    "SR1": {
+        "id": "SR1",
+        "desc": "Strawberries",
+        "price": 5.00
+    },
+    "CF1": {
+        "id": "CF1",
+        "desc": "Coffee",
+        "price": 11.23
+    }
+}
